@@ -1,0 +1,251 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{thecloud}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d46236aa8d82d61d3862ad9f4c16a3dc}{%
+           family={Clarkson},
+           familyi={C\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d46236aa8d82d61d3862ad9f4c16a3dc}
+      \strng{fullhash}{d46236aa8d82d61d3862ad9f4c16a3dc}
+      \strng{bibnamehash}{d46236aa8d82d61d3862ad9f4c16a3dc}
+      \strng{authorbibnamehash}{d46236aa8d82d61d3862ad9f4c16a3dc}
+      \strng{authornamehash}{d46236aa8d82d61d3862ad9f4c16a3dc}
+      \strng{authorfullhash}{d46236aa8d82d61d3862ad9f4c16a3dc}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Cloud}
+      \verb{urlraw}
+      \verb https://www.rclarkson.com/products/speaker-cloud
+      \endverb
+      \verb{url}
+      \verb https://www.rclarkson.com/products/speaker-cloud
+      \endverb
+    \endentry
+    \entry{FernGPU2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=db29a6dc224521c1b6cd5e5817ddf0c7}{%
+           family={Fernando},
+           familyi={F\bibinitperiod},
+           given={Randima},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston [u.a.]}%
+      }
+      \list{publisher}{1}{%
+        {Addision-Wesley}%
+      }
+      \strng{namehash}{db29a6dc224521c1b6cd5e5817ddf0c7}
+      \strng{fullhash}{db29a6dc224521c1b6cd5e5817ddf0c7}
+      \strng{bibnamehash}{db29a6dc224521c1b6cd5e5817ddf0c7}
+      \strng{authorbibnamehash}{db29a6dc224521c1b6cd5e5817ddf0c7}
+      \strng{authornamehash}{db29a6dc224521c1b6cd5e5817ddf0c7}
+      \strng{authorfullhash}{db29a6dc224521c1b6cd5e5817ddf0c7}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Chapter 39. Volume Rendering Techniques}
+      \field{isbn}{0-321-22832-4}
+      \field{title}{GPU gems}
+      \field{year}{2004}
+      \keyw{Computergrafik Computergraphik}
+    \endentry
+    \entry{spirit}{artwork}{}
+      \name{author}{1}{}{%
+        {{hash=e148cabf7c04981c9ec846777a57a2a8}{%
+           family={Hoffer},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Montreal: Galerie de Bellefeuille}%
+      }
+      \strng{namehash}{e148cabf7c04981c9ec846777a57a2a8}
+      \strng{fullhash}{e148cabf7c04981c9ec846777a57a2a8}
+      \strng{bibnamehash}{e148cabf7c04981c9ec846777a57a2a8}
+      \strng{authorbibnamehash}{e148cabf7c04981c9ec846777a57a2a8}
+      \strng{authornamehash}{e148cabf7c04981c9ec846777a57a2a8}
+      \strng{authorfullhash}{e148cabf7c04981c9ec846777a57a2a8}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Spirit}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.artsy.net/artwork/peter-hoffer-spirit-2
+      \endverb
+      \verb{url}
+      \verb https://www.artsy.net/artwork/peter-hoffer-spirit-2
+      \endverb
+    \endentry
+    \entry{pavie:hal-02413269}{article}{}
+      \name{author}{5}{}{%
+        {{hash=12a389ddb4721f383379e14bf5a0eed9}{%
+           family={Pavie},
+           familyi={P\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=519f9a682e31964e07e955c883c878b0}{%
+           family={Gilet},
+           familyi={G\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7b5c459be0e41b18471e21e38d4946ee}{%
+           family={Dischler},
+           familyi={D\bibinitperiod},
+           given={Jean-Michel},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=27d9fa1d60a1aad7e230b7752d611e0c}{%
+           family={Galin},
+           familyi={G\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8dbe9f8993ad5b09649024c062a46045}{%
+           family={Ghazanfarpour},
+           familyi={G\bibinitperiod},
+           given={Djamchid},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cagatay Turkay and Tao Ruan Wan}%
+      }
+      \strng{namehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{fullhash}{2851b96be9aee35b99d693f87c54f4e3}
+      \strng{bibnamehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{authorbibnamehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{authornamehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{authorfullhash}{2851b96be9aee35b99d693f87c54f4e3}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Computer Graphics and Visual Computing (CGVC)}}
+      \field{month}{8}
+      \field{title}{{Volumetric Spot Noise for Procedural 3D Shell Texture Synthesis}}
+      \field{year}{2016}
+      \verb{file}
+      \verb https://hal.archives-ouvertes.fr/hal-02413269/file/EGUK_ShellSpotNoise.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.archives-ouvertes.fr/hal-02413269
+      \endverb
+      \verb{url}
+      \verb https://hal.archives-ouvertes.fr/hal-02413269
+      \endverb
+      \keyw{surface ; solid ; and object rep- resentations I37 [Computer Graphics]: Three-Dimensional Graphics and Realism-Color ; shading ; and texture Keywords Procedural texturing ; shadowing ; Image synthesis ; Procedural texturing ; I37 [Computer Graphics]: Three-Dimensional Graphics and Realism-Color ; procedural noise ; volumetric visualization ; (according to ACM CCS): I33 [Computer Graphics]: Picture/Image Generation-Display algorithms I35 [Computer Graphics]: Computational Geometry and Object Modeling-Curve}
+    \endentry
+    \entry{Villemin2013Flames}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7c32d2c273aaa3102b6adb387a0f3423}{%
+           family={Villemin},
+           familyi={V\bibinitperiod},
+           given={Ryusuke},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ba95dd3425268564c880523395925aea}{%
+           family={Hery},
+           familyi={H\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{cdc08e247898cd6c52f654111b422632}
+      \strng{fullhash}{cdc08e247898cd6c52f654111b422632}
+      \strng{bibnamehash}{cdc08e247898cd6c52f654111b422632}
+      \strng{authorbibnamehash}{cdc08e247898cd6c52f654111b422632}
+      \strng{authornamehash}{cdc08e247898cd6c52f654111b422632}
+      \strng{authorfullhash}{cdc08e247898cd6c52f654111b422632}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2331-7418}
+      \field{journaltitle}{Journal of Computer Graphics Techniques (JCGT)}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{Practical Illumination from Flames}
+      \field{volume}{2}
+      \field{year}{2013}
+      \field{pages}{142\bibrangedash 155}
+      \range{pages}{14}
+      \verb{urlraw}
+      \verb http://jcgt.org/published/0002/02/10/
+      \endverb
+      \verb{url}
+      \verb http://jcgt.org/published/0002/02/10/
+      \endverb
+    \endentry
+    \entry{10.1145/122718.122751}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=5edb791d3858e3efc2f16e9f86834565}{%
+           family={Wijk},
+           familyi={W\bibinitperiod},
+           given={Jarke\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{fullhash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{bibnamehash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{authorbibnamehash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{authornamehash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{authorfullhash}{5edb791d3858e3efc2f16e9f86834565}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The use of stochastic texture for the visualization of scalar and vector fields over surfaces is discussed. Current techniques for texture synthesis are not suitable, because they do not provide local control, and are not suited for the design of textures. A new technique, spot noise, is presented that does provide these features. Spot noise is synthesized by addition of randomly weighted and positioned spots. Local control of the texture is realized by variation of the spot. The spot is a useful primitive for texture design, because, in general, the relations between features of the spot and features of the texture are straightforward. Various examples and applications are shown. Spot noise lends itself well for the synthesis of texture over curved surfaces, and is therefore an alternative to solid texturing. The relations of spot noise with a variety of other techniques, such as radom faults, filtering, sparse convolution, and particle systems, are discussed. It appears that spot noise provides a new perspective on those techniques.}
+      \field{booktitle}{Proceedings of the 18th Annual Conference on Computer Graphics and Interactive Techniques}
+      \field{isbn}{0897914368}
+      \field{series}{SIGGRAPH '91}
+      \field{title}{Spot Noise Texture Synthesis for Data Visualization}
+      \field{year}{1991}
+      \field{pages}{309\bibrangedash 318}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/122718.122751
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/122718.122751
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/122718.122751
+      \endverb
+      \keyw{particle systems,texture synthesis,scientific visualization,flow visualization,fractals}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,258 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{mcguire_2014}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b00c7506870712b7873df016c5094720}{%
+           family={McGuire},
+           familyi={M\bibinitperiod},
+           given={Morgan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b00c7506870712b7873df016c5094720}
+      \strng{fullhash}{b00c7506870712b7873df016c5094720}
+      \strng{bibnamehash}{b00c7506870712b7873df016c5094720}
+      \strng{authorbibnamehash}{b00c7506870712b7873df016c5094720}
+      \strng{authornamehash}{b00c7506870712b7873df016c5094720}
+      \strng{authorfullhash}{b00c7506870712b7873df016c5094720}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Weighted, Blended Order-Independent Transparency}
+      \field{month}{3}
+      \field{title}{Weighted, Blended Order-Independent Transparency}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb http://casual-effects.blogspot.com/2014/03/weighted-blended-order-independent.html
+      \endverb
+      \verb{url}
+      \verb http://casual-effects.blogspot.com/2014/03/weighted-blended-order-independent.html
+      \endverb
+    \endentry
+    \entry{McGuire2013Transparency}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b00c7506870712b7873df016c5094720}{%
+           family={McGuire},
+           familyi={M\bibinitperiod},
+           given={Morgan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d801ad13ed3c0dfe1b666ba7ef7def0e}{%
+           family={Bavoil},
+           familyi={B\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{563c9c4f155ac23aa6b52d6b0e07f10c}
+      \strng{fullhash}{563c9c4f155ac23aa6b52d6b0e07f10c}
+      \strng{bibnamehash}{563c9c4f155ac23aa6b52d6b0e07f10c}
+      \strng{authorbibnamehash}{563c9c4f155ac23aa6b52d6b0e07f10c}
+      \strng{authornamehash}{563c9c4f155ac23aa6b52d6b0e07f10c}
+      \strng{authorfullhash}{563c9c4f155ac23aa6b52d6b0e07f10c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2331-7418}
+      \field{journaltitle}{Journal of Computer Graphics Techniques (JCGT)}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{Weighted Blended Order-Independent Transparency}
+      \field{volume}{2}
+      \field{year}{2013}
+      \field{pages}{122\bibrangedash 141}
+      \range{pages}{20}
+      \verb{urlraw}
+      \verb http://jcgt.org/published/0002/02/09/
+      \endverb
+      \verb{url}
+      \verb http://jcgt.org/published/0002/02/09/
+      \endverb
+    \endentry
+    \entry{pavie:hal-02413269}{article}{}
+      \name{author}{5}{}{%
+        {{hash=12a389ddb4721f383379e14bf5a0eed9}{%
+           family={Pavie},
+           familyi={P\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=519f9a682e31964e07e955c883c878b0}{%
+           family={Gilet},
+           familyi={G\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7b5c459be0e41b18471e21e38d4946ee}{%
+           family={Dischler},
+           familyi={D\bibinitperiod},
+           given={Jean-Michel},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=27d9fa1d60a1aad7e230b7752d611e0c}{%
+           family={Galin},
+           familyi={G\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8dbe9f8993ad5b09649024c062a46045}{%
+           family={Ghazanfarpour},
+           familyi={G\bibinitperiod},
+           given={Djamchid},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cagatay Turkay and Tao Ruan Wan}%
+      }
+      \strng{namehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{fullhash}{2851b96be9aee35b99d693f87c54f4e3}
+      \strng{bibnamehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{authorbibnamehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{authornamehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{authorfullhash}{2851b96be9aee35b99d693f87c54f4e3}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Computer Graphics and Visual Computing (CGVC)}}
+      \field{month}{8}
+      \field{title}{{Volumetric Spot Noise for Procedural 3D Shell Texture Synthesis}}
+      \field{year}{2016}
+      \verb{file}
+      \verb https://hal.archives-ouvertes.fr/hal-02413269/file/EGUK_ShellSpotNoise.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.archives-ouvertes.fr/hal-02413269
+      \endverb
+      \verb{url}
+      \verb https://hal.archives-ouvertes.fr/hal-02413269
+      \endverb
+      \keyw{surface ; solid ; and object rep- resentations I37 [Computer Graphics]: Three-Dimensional Graphics and Realism-Color ; shading ; and texture Keywords Procedural texturing ; shadowing ; Image synthesis ; Procedural texturing ; I37 [Computer Graphics]: Three-Dimensional Graphics and Realism-Color ; procedural noise ; volumetric visualization ; (according to ACM CCS): I33 [Computer Graphics]: Picture/Image Generation-Display algorithms I35 [Computer Graphics]: Computational Geometry and Object Modeling-Curve}
+    \endentry
+    \entry{10.1145/127719.122751}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5edb791d3858e3efc2f16e9f86834565}{%
+           family={Wijk},
+           familyi={W\bibinitperiod},
+           given={Jarke\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{fullhash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{bibnamehash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{authorbibnamehash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{authornamehash}{5edb791d3858e3efc2f16e9f86834565}
+      \strng{authorfullhash}{5edb791d3858e3efc2f16e9f86834565}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The use of stochastic texture for the visualization of scalar and vector fields over surfaces is discussed. Current techniques for texture synthesis are not suitable, because they do not provide local control, and are not suited for the design of textures. A new technique, spot noise, is presented that does provide these features. Spot noise is synthesized by addition of randomly weighted and positioned spots. Local control of the texture is realized by variation of the spot. The spot is a useful primitive for texture design, because, in general, the relations between features of the spot and features of the texture are straightforward. Various examples and applications are shown. Spot noise lends itself well for the synthesis of texture over curved surfaces, and is therefore an alternative to solid texturing. The relations of spot noise with a variety of other techniques, such as radom faults, filtering, sparse convolution, and particle systems, are discussed. It appears that spot noise provides a new perspective on those techniques.}
+      \field{issn}{0097-8930}
+      \field{journaltitle}{SIGGRAPH Comput. Graph.}
+      \field{month}{7}
+      \field{number}{4}
+      \field{title}{Spot Noise Texture Synthesis for Data Visualization}
+      \field{volume}{25}
+      \field{year}{1991}
+      \field{pages}{309\bibrangedash 318}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/127719.122751
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/127719.122751
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/127719.122751
+      \endverb
+      \keyw{scientific visualization,flow visualization,fractals,texture synthesis,particle systems}
+    \endentry
+    \entry{10.1109/TVCG.2002.1021576}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f8b89b955dad449fd9254a354c6041d2}{%
+           family={Zwicker},
+           familyi={Z\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b996af7e283eefe990aabf24ef52e032}{%
+           family={Pfister},
+           familyi={P\bibinitperiod},
+           given={Hanspeter},
+           giveni={H\bibinitperiod}}}%
+        {{hash=57e0e98e8c9de28fa9d4e6709cb9a296}{%
+           family={Baar},
+           familyi={B\bibinitperiod},
+           given={Jeroen},
+           giveni={J\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=89835485884945e38712de8162277435}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Educational Activities Department}%
+      }
+      \strng{namehash}{2e41ba32ecf73baf435ec7c653bc332b}
+      \strng{fullhash}{7f43eef7e31fa30828032fa47c3ac330}
+      \strng{bibnamehash}{2e41ba32ecf73baf435ec7c653bc332b}
+      \strng{authorbibnamehash}{2e41ba32ecf73baf435ec7c653bc332b}
+      \strng{authornamehash}{2e41ba32ecf73baf435ec7c653bc332b}
+      \strng{authorfullhash}{7f43eef7e31fa30828032fa47c3ac330}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we present a framework for high quality splatting based on elliptical Gaussian kernels. To avoid aliasing artifacts, we introduce the concept of a resampling filter, combining a reconstruction kernel with a low-pass filter. Because of the similarity to Heckbert's EWA (elliptical weighted average) filter for texture mapping, we call our technique EWA splatting. Our framework allows us to derive EWA splat primitives for volume data and for point-sampled surface data. It provides high image quality without aliasing artifacts or excessive blurring for volume data and, additionally, features anisotropic texture filtering for point-sampled surfaces. It also handles nonspherical volume kernels efficiently; hence, it is suitable for regular, rectilinear, and irregular volume datasets. Moreover, our framework introduces a novel approach to compute the footprint function, facilitating efficient perspective projection of arbitrary elliptical kernels at very little additional cost. Finally, we show that EWA volume reconstruction kernels can be reduced to surface reconstruction kernels. This makes our splat primitive universal in rendering surface and volume data.}
+      \field{issn}{1077-2626}
+      \field{journaltitle}{IEEE Transactions on Visualization and Computer Graphics}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{EWA Splatting}
+      \field{volume}{8}
+      \field{year}{2002}
+      \field{pages}{223\bibrangedash 238}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/TVCG.2002.1021576
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/TVCG.2002.1021576
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/TVCG.2002.1021576
+      \endverb
+      \keyw{texture mapping,Rendering systems,splatting,volume rendering,antialiasing.}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

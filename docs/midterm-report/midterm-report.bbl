@@ -1,0 +1,81 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{pavie:hal-02413269}{article}{}
+      \name{author}{5}{}{%
+        {{hash=12a389ddb4721f383379e14bf5a0eed9}{%
+           family={Pavie},
+           familyi={P\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=519f9a682e31964e07e955c883c878b0}{%
+           family={Gilet},
+           familyi={G\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7b5c459be0e41b18471e21e38d4946ee}{%
+           family={Dischler},
+           familyi={D\bibinitperiod},
+           given={Jean-Michel},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=27d9fa1d60a1aad7e230b7752d611e0c}{%
+           family={Galin},
+           familyi={G\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8dbe9f8993ad5b09649024c062a46045}{%
+           family={Ghazanfarpour},
+           familyi={G\bibinitperiod},
+           given={Djamchid},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cagatay Turkay and Tao Ruan Wan}%
+      }
+      \strng{namehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{fullhash}{2851b96be9aee35b99d693f87c54f4e3}
+      \strng{bibnamehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{authorbibnamehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{authornamehash}{3d15951ffaea1dfaeabd2d5de3939d0f}
+      \strng{authorfullhash}{2851b96be9aee35b99d693f87c54f4e3}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Computer Graphics and Visual Computing (CGVC)}}
+      \field{month}{8}
+      \field{title}{{Volumetric Spot Noise for Procedural 3D Shell Texture Synthesis}}
+      \field{year}{2016}
+      \verb{file}
+      \verb https://hal.archives-ouvertes.fr/hal-02413269/file/EGUK_ShellSpotNoise.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.archives-ouvertes.fr/hal-02413269
+      \endverb
+      \verb{url}
+      \verb https://hal.archives-ouvertes.fr/hal-02413269
+      \endverb
+      \keyw{surface ; solid ; and object rep- resentations I37 [Computer Graphics]: Three-Dimensional Graphics and Realism-Color ; shading ; and texture Keywords Procedural texturing ; shadowing ; Image synthesis ; Procedural texturing ; I37 [Computer Graphics]: Three-Dimensional Graphics and Realism-Color ; procedural noise ; volumetric visualization ; (according to ACM CCS): I33 [Computer Graphics]: Picture/Image Generation-Display algorithms I35 [Computer Graphics]: Computational Geometry and Object Modeling-Curve}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
