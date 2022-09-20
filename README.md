@@ -105,8 +105,11 @@ computational efficiency, while yielding comparable results.
 
 Recall that our kernel is a three-dimensional Gaussian of the form:
 
-\[\begin{aligned}
-K(x;x_0) = \frac{\exp\left({-\frac{1}{2}(x-x_0)^T\Sigma^{-1}(x-x_0)}\right)}{\sqrt{(2\pi)^3|\Sigma|}}\end{aligned}\]
+$$
+\begin{aligned}
+K(x;x_0) = \frac{\exp\left({-\frac{1}{2}(x-x_0)^T\Sigma^{-1}(x-x_0)}\right)}{\sqrt{(2\pi)^3|\Sigma|}}
+\end{aligned}
+$$
 
 Where \(x_0\) is the center of each impulse and \(\Sigma=RSS^TR^T\)
 where \(R\) is the orientation and \(S\) the scale of our impulse.
@@ -115,11 +118,14 @@ Now we transform from world to camera coordinates. The position \(x_0\)
 will be transformed separately, for now we focus on the orientation and
 scale of the new kernel.
 
-\[\begin{aligned}
-\Sigma' = JW_{3\times 3} \; \Sigma \; W_{3\times 3}^TJ^T\end{aligned}\]
+$$
+\begin{aligned}
+\Sigma' = JW_{3\times 3} \; \Sigma \; W_{3\times 3}^TJ^T
+\end{aligned}
+$$
 
-Here \(W_{3\times 3}\) is the rotational component of the transformation
-from world to camera coordinates and \(J\) is the Jacobian matrix of the
+Here $W_{3\times 3}$ is the rotational component of the transformation
+from world to camera coordinates and $J$ is the Jacobian matrix of the
 approximation of the perspective divide. To transform from camera
 coordinates to screen coordinates we need to perform what is known as a
 perspective divide but this is a non-linear operation which usually
@@ -128,21 +134,23 @@ Since this is not a linear operation the resulting function would no
 longer be Gaussian.
 
 To work around this we can use an affine approximation of the
-perspective divide. Let \(m\) take the points from camera space to
+perspective divide. Let $m$ take the points from camera space to
 screen space.
 
-\[\begin{aligned}
+$$
+\begin{aligned}
 m = \left[
 \begin{array}{ccc}
 x_1/x_3 \\
 x_2/x_3 \\
 |x| \\
 \end{array}
-\right]\end{aligned}\]
+\right]\end{aligned}
+$$
 
 We can approximate this with the first two terms of the Taylor series as
-\(m(x_0)+\frac{\partial m}{\partial x}(x-x_0)\) where \(J\) is the
-Jacobian of \(m\) given below.
+$m(x_0)+\frac{\partial m}{\partial x}(x-x_0)$ where $J$ is the
+Jacobian of $m$ given below.
 
 $$
 \begin{aligned}
@@ -160,7 +168,8 @@ The transformed two dimensional Gaussian becomes:
 $$
 \begin{aligned}
  \label{eq:1}
-K'(x';x_0') = \frac{ \exp\left(-\frac{1}{2}{(x'-x_0')^T(\Sigma'_{2\times 2})^{-1}(x'-x_0')}\right) }{2\pi\sqrt{|\Sigma'_{2\times 2}|}}\end{aligned}
+K'(x';x_0') = \frac{ \exp\left(-\frac{1}{2}{(x'-x_0')^T(\Sigma'_{2\times 2})^{-1}(x'-x_0')}\right) }{2\pi\sqrt{|\Sigma'_{2\times 2}|}}
+\end{aligned}
 $$
 
 Where $\Sigma'_{2\times 2}$ is the top left $2\times 2$ partition of
@@ -168,17 +177,20 @@ $\Sigma$ and $x_0'$ is the transformed impulse center (such that
 $x_0'=Wx_0$).
 
 To avoid aliasing this function is convolved with a low pass filter
-\(h\) - another Gaussian function. This has the effect of softening the
+$h$ - another Gaussian function. This has the effect of softening the
 output, particularly at the edges. This amounts to adding the filter’s
 variance matrix (the identity matrix multiplied by some constant factor
-\(\lambda\)) to \(\Sigma'_{2\times 2}\) before inversion in equation
+$\lambda$) to $\Sigma'_{2\times 2}$ before inversion in equation
 [\[eq:1\]](#eq:1).
 
 The final two dimensional Gaussian with low-pass filter is:
 
-\[\begin{aligned}
+$$
+\begin{aligned}
  \label{eq:2}
-K'(x';x_0')\circ h = \frac{ \exp\left(-\frac{1}{2}{(x'-x_0')^T(\Sigma'_{2\times 2} + \lambda I)^{-1}(x'-x_0')}\right) }{2\pi\sqrt{|\Sigma'_{2\times 2}|}}\end{aligned}\]
+K'(x';x_0')\circ h = \frac{ \exp\left(-\frac{1}{2}{(x'-x_0')^T(\Sigma'_{2\times 2} + \lambda I)^{-1}(x'-x_0')}\right) }{2\pi\sqrt{|\Sigma'_{2\times 2}|}}
+\end{aligned}
+$$
 
 ## Order Independent Transparency
 
@@ -187,9 +199,12 @@ between the current color value and the color value being blended over
 top, which can be represented as the recurrance relation in Equation
 [\[eq:blend\]](#eq:blend).
 
-\[\begin{aligned}
+$$
+\begin{aligned}
  \label{eq:blend}
-C_{n+1} = \alpha_{n+1} c_{n+1} + (1-\alpha_{n+1}) C_{n}\end{aligned}\]
+C_{n+1} = \alpha_{n+1} c_{n+1} + (1-\alpha_{n+1}) C_{n}
+\end{aligned}
+$$
 
 This operation is highly order dependent: the colors blended later
 generally have a much larger effect on the final color. For this reason
@@ -206,20 +221,26 @@ individual scene.
 Morgan McGuire and Louis Bavoil suggest the following function to
 approximate blending.
 
-\[\begin{aligned}
+$$
+\begin{aligned}
  \label{eq:wblend}
 C_f \approx \frac{\sum\limits^n_{i=1} w_iC_i}{\sum\limits^n_{i=1} w_i\alpha_i}
-    \left[ 1-\prod_{i=1}^n{(1-\alpha_i)} \right] + C_0\prod_{i=1}^n{(1-\alpha_i)}\end{aligned}\]
+    \left[ 1-\prod_{i=1}^n{(1-\alpha_i)} \right] + C_0\prod_{i=1}^n{(1-\alpha_i)}
+\end{aligned}
+$$
 
 The weight factor must be chosen carefully depending on the effect
 desired. For example for the hair in this report the following hybrid
 weight function was used which uses both depth and the color itself, due
 to Morgan McGuire.
 
-\[\begin{aligned}
+$$
+\begin{aligned}
  \label{eq:3}
 w_i = \text{clamp}(\alpha\text{max}\{r, g, b\}, \alpha, 1) \cdot
-    \text{clamp}\left(\frac{0.03}{10^{-5} + (z / 200)^4}, 0.01, 3\times10^3\right)\end{aligned}\]
+    \text{clamp}\left(\frac{0.03}{10^{-5} + (z / 200)^4}, 0.01, 3\times10^3\right)
+\end{aligned}
+$$
 
 Where \(\alpha\) is is the transparency of the material multiplied by
 the result of Equation [\[eq:2\]](#eq:2), \(r,g,b\) are the color values
