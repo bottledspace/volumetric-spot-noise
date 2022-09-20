@@ -236,11 +236,6 @@ of the material and $z$ is the depth of the impulse in screen space.
 
 # Results
 
-I will now present the results of my implementation. I was particularly
-interested in trying to replicate the results of the hair and grass
-textures by Pavie et al, and so this is what I will focus on and compare
-against.
-
 The both hair and grass textures were created by using long thin
 translucent Gaussian kernels. The long axis of each kernel was
 transformed to camera space and used to add a color gradient so that the
