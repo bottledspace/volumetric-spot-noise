@@ -34,7 +34,7 @@ pixel and into the scene and samples are then accumulated at points
 along each ray. Unfortunately this means we must sample our entire
 volume multiple times per pixel.
 
-*EWA splatting* is a technique due to Matthias Zwicker et al. for
+*EWA splatting* is a technique [due to Matthias Zwicker et al](https://doi.org/10.1109/TVCG.2002.1021576). for
 rendering point cloud surfaces efficiently. Their method uses three
 dimensional Gaussian functions as the kernel of choice for rendering
 impulses since they are closed under linear transformations and have a
@@ -144,24 +144,28 @@ We can approximate this with the first two terms of the Taylor series as
 \(m(x_0)+\frac{\partial m}{\partial x}(x-x_0)\) where \(J\) is the
 Jacobian of \(m\) given below.
 
-\[\begin{aligned}
+$$
+\begin{aligned}
 J = \frac{\partial m}{\partial x} = \left[
 \begin{array}{ccc}
     1/x_3   &        0 &  -x_1/x_3^2 \\
     0       &    1/x_3 &  -x_2/x_3^2 \\
     x_1/|x| &  x_2/|x| &   x_3/|x|   \\
 \end{array}
-\right]\end{aligned}\]
+\right]\end{aligned}
+$$
 
 The transformed two dimensional Gaussian becomes:
 
-\[\begin{aligned}
+$$
+\begin{aligned}
  \label{eq:1}
-K'(x';x_0') = \frac{ \exp\left(-\frac{1}{2}{(x'-x_0')^T(\Sigma'_{2\times 2})^{-1}(x'-x_0')}\right) }{2\pi\sqrt{|\Sigma'_{2\times 2}|}}\end{aligned}\]
+K'(x';x_0') = \frac{ \exp\left(-\frac{1}{2}{(x'-x_0')^T(\Sigma'_{2\times 2})^{-1}(x'-x_0')}\right) }{2\pi\sqrt{|\Sigma'_{2\times 2}|}}\end{aligned}
+$$
 
-Where \(\Sigma'_{2\times 2}\) is the top left \(2\times 2\) partition of
-\(\Sigma\) and \(x_0'\) is the transformed impulse center (such that
-\(x_0'=Wx_0\)).
+Where $\Sigma'_{2\times 2}$ is the top left $2\times 2$ partition of
+$\Sigma$ and $x_0'$ is the transformed impulse center (such that
+$x_0'=Wx_0$).
 
 To avoid aliasing this function is convolved with a low pass filter
 \(h\) - another Gaussian function. This has the effect of softening the
@@ -231,8 +235,6 @@ Disable depth write, enable depth test Splat EWA kernels using Equation
 
 # Results
 
-  
-
 I will now present the results of my implementation. I was particularly
 interested in trying to replicate the results of the hair and grass
 textures by Pavie et al, and so this is what I will focus on and compare
@@ -254,34 +256,6 @@ the large amount of blending in these areas (see Figure
 [\[fig:strand\]](#fig:strand)). This could potentially be solved by
 further adjusting the weight function used for blending.
 
-Finally, because of the control offered by interpolating the impulse
-distributions, the method extends naturally to animation. In the hair
-and grass examples a wind rippling effect was achieved by rotating the
-impulses along an axis perpendicular to the major axis by a function
-which varied over time. I also found that skewing the variance matrix
-instead of rotating had an interesting effect which could be used
-instead depending on the texture and effect desired.
-
-\[\begin{aligned}
- \label{eq:anim}
-    f(t;x) = \frac12\cos\left(5(x_1-x_2-x_3-\frac12\cos(t)-t)\right)\end{aligned}\]
-
-Equation [\[eq:anim\]](#eq:anim) is illustrative of the types of
-functions which were used to control the animation. I found that
-oscillations which combined both the spatial and time domains worked
-well to create a ripple effect, and that by nesting trigonometric
-functions I could oscillate the speed of oscillations which helped to
-produce a natural looking result. Here \(t\) increased over time and
-\(x\) was the center of each impulse.
-
-# Conclusion
-
-In this report I have shown a method based on the work of Nicolas Pavie
-et al. for synthesizing surface textures using volumetric spot noise.
-The method has been modified to use the two dimensional kernel by
-Matthias Zwicker et al. An application of the method to animated
-textures has also been provided.
-
 As a method for creating strand based textures such as grass and hair I
 believe that compelling visual results can be achieved. However there
 are significant downsides to this method which limit its use. Since the
@@ -300,6 +274,6 @@ also well suited to handle the translucent effect present in hair and
 foilage, as well as to add subtle blur with the low-pass filter that
 would be much more difficult to achieve using a polygonal technique.
 
-I believe future work could be done to combine the advantages of this
+Future work could be done to combine the advantages of this
 method such as the low-pass filter and weighted order independent
 transparency with a more traditional curve based approach.
