@@ -236,7 +236,8 @@ of the material and $z$ is the depth of the impulse in screen space.
 
 # Results
 
-The both hair and grass textures were created by using long thin
+While this method is not restricted to rendering strand particles, this was
+the predominant use-case evaluated here. The both hair and grass textures were created by using long thin
 translucent Gaussian kernels. The long axis of each kernel was
 transformed to camera space and used to add a color gradient so that the
 roots of each strand were darker - simulating the effect of strands
@@ -248,8 +249,7 @@ improvement as it would better cover the underlying mesh.
 
 One issue observed when using order independent transparency is that
 lighter bands or ‘halos’ tend to be present around the objects due to
-the large amount of blending in these areas (see Figure
-[\[fig:strand\]](#fig:strand)). This could potentially be solved by
+the large amount of blending in these areas. This could potentially be solved by
 further adjusting the weight function used for blending.
 
 As a method for creating strand based textures such as grass and hair I
