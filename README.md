@@ -1,5 +1,7 @@
 # Introduction
 
+<img alt="Hair Rendering for Stanford Bunny with and without OIT" src="figures/bunny.webp" />
+
 In this report I will present a method of volumetric spot noise for
 surface texture synthesis largely based on the method by Nicolas Pavie
 et al. presented in the paper [Volumetric Spot Noise for Procedural 3D Shell
@@ -52,7 +54,7 @@ traditional methods of blending. Since the camera typically moves
 per-frame, this means the impulses must also be sorted per-frame which
 can be computationally prohibitive with large sets of impulses.
 
-Morgan McGuire and Louis Bavoil propose a method of [*]depth weighted
+Morgan McGuire and Louis Bavoil propose a method of [depth weighted
 order independent transparency](http://jcgt.org/published/0002/02/09/)
 for rendering transparent objects in a
 scene by weighting the kernels according to their depth from the camera.
