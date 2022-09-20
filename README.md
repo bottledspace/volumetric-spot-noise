@@ -84,17 +84,6 @@ face nearest the center of the leaf node. Each leaf node must be small
 enough that the linear approximation is sufficient, so for manifolds of
 high curvature this will be a slow process.
 
-Note that the actual octree is purely conceptual and does not have to be
-stored, only the set of impulses is needed for later steps. See
-Algorithm [\[alg:init\]](#alg:init) for a sketch of the algorithm.
-
-Let \({pending}\) be a new queue Push minimum axis aligned cube which
-bounds \({mesh}\) to \({pending}\) \({top} \gets \text{pop}({pending})\)
-Get nearest point and surface normal to \(\text{center}({top})\) in mesh
-Pick random point(s) in \({top}\) and project onto plane Bisect
-\({top}\) along center of all three axes Push each resulting cube which
-intersects \({mesh}\) to \({pending}\)
-
 ## EWA Splatting
 
 The EWA splatting method which was used and will be described in this
@@ -180,8 +169,7 @@ To avoid aliasing this function is convolved with a low pass filter
 $h$ - another Gaussian function. This has the effect of softening the
 output, particularly at the edges. This amounts to adding the filter’s
 variance matrix (the identity matrix multiplied by some constant factor
-$\lambda$) to $\Sigma'_{2\times 2}$ before inversion in equation
-[\[eq:1\]](#eq:1).
+$\lambda$) to $\Sigma'_{2\times 2}$ before inversion in the equation above.
 
 The final two dimensional Gaussian with low-pass filter is:
 
@@ -242,17 +230,9 @@ w_i = \text{clamp}(\alpha\text{max}\{r, g, b\}, \alpha, 1) \cdot
 \end{aligned}
 $$
 
-Where \(\alpha\) is is the transparency of the material multiplied by
-the result of Equation [\[eq:2\]](#eq:2), \(r,g,b\) are the color values
-of the material and \(z\) is the depth of the impulse in screen space.
-
-The following pseudocode summarizes the process of rendering a frame
-using weighted blending.
-
-Enable depth write and depth test Render solid geometry to depth buffer.
-Disable depth write, enable depth test Splat EWA kernels using Equation
-[\[eq:2\]](#eq:2) Disable depth test Compose results using Equation
-[\[eq:3\]](#eq:3)
+Where $\alpha$ is is the transparency of the material multiplied by
+$K'(x';x_0')\circ h$ above, $r,g,b$ are the color values
+of the material and $z$ is the depth of the impulse in screen space.
 
 # Results
 
