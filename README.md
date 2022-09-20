@@ -1,6 +1,6 @@
 # Introduction
 
-<img alt="Hair Rendering for Stanford Bunny with and without OIT" src="figures/bunny.webp" />
+<img alt="Hair Rendering for Stanford Bunny with and without OIT" src="figures/bunny.webp?raw=true" />
 
 In this report I will present a method of volumetric spot noise for
 surface texture synthesis largely based on the method by Nicolas Pavie
