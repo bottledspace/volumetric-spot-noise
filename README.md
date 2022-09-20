@@ -1,18 +1,16 @@
-# Introduction
-
 <img alt="Hair Rendering for Stanford Bunny with and without OIT" src="figures/bunny.webp?raw=true" />
 
-In this report I will present a method of volumetric spot noise for
-surface texture synthesis largely based on the method by Nicolas Pavie
-et al. presented in the paper [Volumetric Spot Noise for Procedural 3D Shell
+This is an implementation of *volumetric spot noise*, a technique for
+representing three dimensional textures algorithmically using small kernels.
+This work is largely based on the method presented by Nicolas Pavie
+et al. in the paper [Volumetric Spot Noise for Procedural 3D Shell
 Texture Synthesis](https://hal.archives-ouvertes.fr/hal-02413269)
-with several modifications. I will then evaluate my
-attempts to replicate the hair and grass textures, and briefly discuss
-my findings extending the method to animation.
+with several modifications. The details of the method are given below.
 
 # Background
 
 *Spot noise* is a method of texture synthesis presented by Jarke J. Wijk
+in the paper [Spot Noise Texture Synthesis for Data Visualization](https://doi.org/10.1145/127719.122751])
 where textures are created using a sum of impulses each convolved by a
 kernel function. Various textural effects can be produced by controlling
 the distribution of these impulses and by the type of kernel functions
