@@ -100,8 +100,8 @@ K(x;x_0) = \frac{\exp\left({-\frac{1}{2}(x-x_0)^T\Sigma^{-1}(x-x_0)}\right)}{\sq
 \end{aligned}
 $$
 
-Where \(x_0\) is the center of each impulse and \(\Sigma=RSS^TR^T\)
-where \(R\) is the orientation and \(S\) the scale of our impulse.
+Where $x_0$ is the center of each impulse and $\Sigma=RSS^TR^T$
+where $R$ is the orientation and $S$ the scale of our impulse.
 
 Now we transform from world to camera coordinates. The position \(x_0\)
 will be transformed separately, for now we focus on the orientation and
